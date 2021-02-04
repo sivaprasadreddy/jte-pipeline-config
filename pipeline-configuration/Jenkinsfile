@@ -1,2 +1,13 @@
-build()
-static_code_analysis()
+pipeline{
+  agent any
+  stages{
+    stage("CI"){
+      steps{
+        script{
+          build()
+        }
+        static_code_analysis()
+      }
+    }
+  }
+}
