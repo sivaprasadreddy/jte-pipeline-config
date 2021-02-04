@@ -1,5 +1,6 @@
 @merge libraries{
     gradle
+    maven
     sonarqube
 }
 
